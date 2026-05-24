@@ -1,0 +1,289 @@
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+clj꞉user꞉> 
+40
+clj꞉try-clojure.core꞉> 
+(+ 2 40)
+clj꞉try-clojure.core꞉> 
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+clj꞉user꞉> 
+(+ 2 40)
+clj꞉try-clojure.core꞉> 
+42
+clj꞉try-clojure.core꞉> 
+42
+clj꞉try-clojure.core꞉> 
+42N
+clj꞉try-clojure.core꞉> 
+d
+; Syntax error compiling at (src/try_clojure/core.clj:0:0).
+; Unable to resolve symbol: d in this context
+clj꞉try-clojure.core꞉> 
+042N
+clj꞉try-clojure.core꞉> 
+042
+clj꞉try-clojure.core꞉> 
+041
+clj꞉try-clojure.core꞉> 
+040
+clj꞉try-clojure.core꞉> 
+039
+; Syntax error reading source at (REPL:4:1).
+; Invalid number: 039
+clj꞉try-clojure.core꞉> 
+040
+clj꞉try-clojure.core꞉> 
+2r5
+; Syntax error reading source at (REPL:4:1).
+; For input string: "5" under radix 2
+clj꞉try-clojure.core꞉> 
+2r10
+clj꞉try-clojure.core꞉> 
+2r101
+clj꞉try-clojure.core꞉> 
+22/7
+clj꞉try-clojure.core꞉> 
+M12
+; Syntax error compiling at (src/try_clojure/core.clj:0:0).
+; Unable to resolve symbol: M12 in this context
+clj꞉try-clojure.core꞉> 
+M12.2
+; Syntax error (ClassNotFoundException) compiling at (src/try_clojure/core.clj:0:0).
+; M12.2
+clj꞉try-clojure.core꞉> 
+42M
+clj꞉try-clojure.core꞉> 
+\H
+clj꞉try-clojure.core꞉> 
+'X
+clj꞉try-clojure.core꞉> 
+(+ 2 40)
+clj꞉try-clojure.core꞉> 
+(+ 10 *1)
+clj꞉try-clojure.core꞉> 
+(doc +)
+; Syntax error compiling at (src/try_clojure/core.clj:5:8).
+; Unable to resolve symbol: doc in this context
+clj꞉try-clojure.core꞉> 
+user=>
+; Syntax error compiling at (src/try_clojure/core.clj:0:0).
+; Unable to resolve symbol: user=> in this context
+clj꞉try-clojure.core꞉> 
+user=>
+; Syntax error compiling at (src/try_clojure/core.clj:0:0).
+; Unable to resolve symbol: user=> in this context
+clj꞉try-clojure.core꞉> 
+user=>
+; Syntax error compiling at (src/try_clojure/core.clj:0:0).
+; Unable to resolve symbol: user=> in this context
+clj꞉try-clojure.core꞉> 
+(doc mean)
+; Syntax error compiling at (src/try_clojure/core.clj:3:8).
+; Unable to resolve symbol: doc in this context
+clj꞉try-clojure.core꞉> 
+(doc +)
+; Syntax error compiling at (src/try_clojure/core.clj:3:8).
+; Unable to resolve symbol: doc in this context
+clj꞉try-clojure.core꞉> 
+(doc +)
+; Syntax error compiling at (src/try_clojure/core.clj:3:1).
+; Unable to resolve symbol: doc in this context
+clj꞉try-clojure.core꞉> 
+user=> (doc +)
+; Syntax error compiling at (.calva/repl.calva-repl:91:8).
+; Unable to resolve symbol: doc in this context
+clj꞉try-clojure.core꞉> (require '[clojure.repl :refer :all])
+
+; Results are configured to appear in the Output Terminal.
+; To reveal the output, use the command:
+; > Calva: Show/Open the result output destination
+clj꞉try-clojure.core꞉> 
+
+
+
+
+clj꞉try-clojure.core꞉> 
+(doc +)
+clj꞉try-clojure.core꞉> 
+(ns try-clojure.core
+  (:require [clojure.repl :refer [doc]]))
+
+(doc +)
+clj꞉try-clojure.core꞉> 
+ (doc +)
+clj꞉try-clojure.core꞉>(doc +) 
+; Syntax error compiling at (.calva/repl.calva-repl:0:0).
+; Unable to resolve symbol:   in this context
+clj꞉try-clojure.core꞉> 
+(doc +)
+clj꞉try-clojure.core꞉> 
+(doc +)
+clj꞉try-clojure.core꞉> 
+(doc +)
+clj꞉try-clojure.core꞉> 
+(doc +)
+clj꞉try-clojure.core꞉> 
+(doc +)
+
+clj꞉try-clojure.core꞉> 
+
+
+(find-doc "+")
+
+
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+clj꞉user꞉> 
+
+; Results are configured to appear in the Output Terminal.
+; To reveal the output, use the command:
+; > Calva: Show/Open the result output destination
+clj꞉user꞉> 
+gen-class
+; Syntax error compiling at (.calva/repl.calva-repl:0:0).
+; Can't take value of a macro: #'clojure.core/gen-class
+clj꞉user꞉> 
+(find-doc "+")
+; Execution error (PatternSyntaxException) at java.util.regex.Pattern/error (Pattern.java:2204).
+; Dangling meta character '+' near index 0
+; +
+; ^
+clj꞉user꞉> 
+(find-doc "\\+")
+clj꞉user꞉> 
+(find-doc "trim")
+clj꞉user꞉> 
+(find-doc "triml")
+clj꞉user꞉> 
+(find-doc "trimr")
+
+clj꞉user꞉> 
+khjkh
+()
+; Results are configured to appear in the Output Terminal.
+; To reveal the output, use the command:
+; > Calva: Show/Open the result output destination
+clj꞉user꞉> 
+(doc +)
+
+djsla
+(dir)
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+clj꞉user꞉> 
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+(doc +)
+cljs꞉user꞉> 
+(dir clojure-version)
+; Execution error at user/eval10276 (repl.calva-repl:174).
+; No namespace: clojure-version found
+cljs꞉user꞉> 
+(dir clojure.core)
+cljs꞉user꞉> 
+(dir clojure.repl)
+cljs꞉user꞉> 
+(source +)
+cljs꞉user꞉> 
+(def x 42)
+cljs꞉user꞉> 
+(* x 2)
+cljs꞉user꞉> 
+(defn foo [a b]
+  (+ a b))
+cljs꞉user꞉> 
+(foo 10 20)
+cljs꞉user꞉> 
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+clj꞉user꞉> 
+(ns try-clojure.core
+  (:require [clojure.repl :refer [doc]]))
+clj꞉try-clojure.core꞉> 
+(println "Hello, World!")
+clj꞉try-clojure.core꞉> 
+(+ 1 2 3)
+clj꞉try-clojure.core꞉> (doc +)
+
+; Results are configured to appear in the Output Terminal.
+; To reveal the output, use the command:
+; > Calva: Show/Open the result output destination
+clj꞉try-clojure.core꞉> clear
+; Syntax error compiling at (.calva/repl.calva-repl:0:0).
+; Unable to resolve symbol: clear in this context
+clj꞉try-clojure.core꞉> 
+(defn symmetrize-body-parts
+  [asym-body-parts]
+  (loop [remaining-asym-parts asym-body-parts
+         final-body-parts []]
+    (if (empty? remaining-asym-parts)
+      final-body-parts
+      (let [[part & remaining] remaining-asym-parts]
+        (recur remaining
+               (into final-body-parts
+                     (set [part (matching-part part)])))))))
+; Syntax error compiling at (src/try_clojure/core.clj:16:33).
+; Unable to resolve symbol: matching-part in this context
+clj꞉try-clojure.core꞉> (def asym-hobbit-body-parts
+  [{:name "head" :size 3}
+   {:name "left-eye" :size 1}
+   {:name "left-ear" :size 1}
+   {:name "mouth" :size 1}
+   {:name "nose" :size 1}
+   {:name "neck" :size 2}
+   {:name "left-shoulder" :size 3}
+   {:name "left-upper-arm" :size 3}
+   {:name "chest" :size 10}
+   {:name "back" :size 10}
+   {:name "left-forearm" :size 3}
+   {:name "abdomen" :size 6}
+   {:name "left-kidney" :size 1}
+   {:name "left-hand" :size 2}
+   {:name "left-knee" :size 2}
+   {:name "left-thigh" :size 4}
+   {:name "left-lower-leg" :size 3}
+   {:name "left-achilles" :size 1}
+   {:name "left-foot" :size 2}])
+(def asym-hobbit-body-parts
+  [{:name "head" :size 3}
+   {:name "left-eye" :size 1}
+   {:name "left-ear" :size 1}
+   {:name "mouth" :size 1}
+   {:name "nose" :size 1}
+   {:name "neck" :size 2}
+   {:name "left-shoulder" :size 3}
+   {:name "left-upper-arm" :size 3}
+   {:name "chest" :size 10}
+   {:name "back" :size 10}
+   {:name "left-forearm" :size 3}
+   {:name "abdomen" :size 6}
+   {:name "left-kidney" :size 1}
+   {:name "left-hand" :size 2}
+   {:name "left-knee" :size 2}
+   {:name "left-thigh" :size 4}
+   {:name "left-lower-leg" :size 3}
+   {:name "left-achilles" :size 1}
+   {:name "left-foot" :size 2}])
+clj꞉try-clojure.core꞉> 
+(def asym-hobbit-body-parts
+  [{:name "head" :size 3}
+   {:name "left-eye" :size 1}
+   {:name "left-ear" :size 1}
+   {:name "mouth" :size 1}
+   {:name "nose" :size 1}
+   {:name "neck" :size 2}
+   {:name "left-shoulder" :size 3}
+   {:name "left-upper-arm" :size 3}
+   {:name "chest" :size 10}
+   {:name "back" :size 10}
+   {:name "left-forearm" :size 3}
+   {:name "abdomen" :size 6}
+   {:name "left-kidney" :size 1}
+   {:name "left-hand" :size 2}
+   {:name "left-knee" :size 2}
+   {:name "left-thigh" :size 4}
+   {:name "left-lower-leg" :size 3}
+   {:name "left-achilles" :size 1}
+   {:name "left-foot" :size 2}])
+clj꞉try-clojure.core꞉> (symmetrize-body-parts [asym-hobbit-body-parts])
+; Execution error (NullPointerException) at try-clojure.core/matching-part (core.clj:4).
+; Cannot invoke "Object.toString()" because "s" is null
+clj꞉try-clojure.core꞉> (symmetrize-body-parts asym-hobbit-body-parts)
+clj꞉try-clojure.core꞉> (symmetrize-body-parts asym-hobbit-body-parts)
+(symmetrize-body-parts asym-hobbit-body-parts)
+clj꞉try-clojure.core꞉> 
