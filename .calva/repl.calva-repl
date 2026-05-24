@@ -286,4 +286,19 @@ clj꞉try-clojure.core꞉> (symmetrize-body-parts [asym-hobbit-body-parts])
 clj꞉try-clojure.core꞉> (symmetrize-body-parts asym-hobbit-body-parts)
 clj꞉try-clojure.core꞉> (symmetrize-body-parts asym-hobbit-body-parts)
 (symmetrize-body-parts asym-hobbit-body-parts)
+clj꞉try-clojure.core꞉>(better-symmetrize-body-parts asym-hobbit-body-parts) 
+; Syntax error compiling at (.calva/repl.calva-repl:0:0).
+; Unable to resolve symbol:   in this context
+clj꞉try-clojure.core꞉> (better-symmetrize-body-parts asym-hobbit-body-parts)
+; Syntax error compiling at (.calva/repl.calva-repl:292:24).
+; Unable to resolve symbol: better-symmetrize-body-parts in this context
 clj꞉try-clojure.core꞉> 
+(defn better-symmetrize-body-parts
+  "Expects a seq of maps that have a :name and :size"
+  [asym-body-parts]
+  (reduce (fn [final-body-parts part]
+            (into final-body-parts
+                  (set [part (matching-part part)])))
+          []
+          asym-body-parts))
+clj꞉try-clojure.core꞉> (better-symmetrize-body-parts asym-hobbit-body-parts)

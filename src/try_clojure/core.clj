@@ -35,4 +35,11 @@
    {:name "left-achilles" :size 1}
    {:name "left-foot" :size 2}])
 
-(symmetrize-body-parts asym-hobbit-body-parts)
+(defn better-symmetrize-body-parts
+  "Expects a seq of maps that have a :name and :size"
+  [asym-body-parts]
+  (reduce (fn [final-body-parts part]
+            (into final-body-parts
+                  (set [part (matching-part part)])))
+          []
+          asym-body-parts))
